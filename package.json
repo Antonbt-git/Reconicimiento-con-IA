@@ -1,0 +1,43 @@
+{
+  "name": "aurora-ix",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:https": "HTTPS=1 vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "preview:https": "HTTPS=1 vite preview",
+    "test": "vitest run",
+    "test:e2e": "node tests/e2e/smoke.mjs",
+    "lint": "oxlint"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.71.0",
+    "onnxruntime-web": "^1.31.1",
+    "qrcode": "^1.5.4",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5",
+    "recharts": "^3.10.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/node": "^24.19.2",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-basic-ssl": "^2.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "jsdom": "^31.0.0",
+    "oxlint": "^1.90.0",
+    "tailwindcss": "^4.3.5",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.6",
+    "vitest": "^5.1.0"
+  },
+  "description": "AURORA IX – Plataforma de análisis visual con supervisión de EPP (casco, chaleco) por fotos y en vivo, con alertas al celular."
+}
